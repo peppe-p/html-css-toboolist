@@ -19,19 +19,29 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900;
 }
     h2::before {
         content: "\0025BE";
     }
 
+h4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 20px;
+}
 header {
     background-color: white;
 }
 
 span {
     display: inline-block;
+}
+
+section {
+    margin: 20px 0px;
 }
 
 /* ##### ELEMENTI ##### */
@@ -41,28 +51,57 @@ span {
     height: auto;
 }
 
-.button.on {
-    color: white;
-    background-color: #47adf1;
-    border: 2px solid #47adf1;
-    border-radius: 5px;
-}
+    .button.on {
+        color: white;
+        background-color: #47adf1;
+        border: 2px solid #47adf1;
+        border-radius: 5px;
+    }
 
-.button.off {
-    color: #d0d5d9;
-    background-color: white;
-    border: 2px solid #d0d5d9;
-    border-radius: 5px;
+    .button.off {
+        color: #d0d5d9;
+        background-color: white;
+        border: 2px solid #d0d5d9;
+        border-radius: 5px;
+    }
+
+.checkbox{
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
 }
+    .checkbox.checked {
+        border-color: #6fc6b2;
+    }
+        .checkbox.checked > span::before {
+            color: #6fc6b2;
+            content: "\2714";
+            position: relative;
+            bottom: 7px;
+            right: 3px;
+        }
+    .checkbox.crossed {
+        border-color: #ea473c;
+    }
+        .checkbox.crossed > span::before {
+            color: #ea473c;
+            content: "\2718";
+            position: relative;
+            bottom: 7px;
+            right: 3px;
+        }
 /* #################### */
 
-.div-top > span {
-    margin: 15px 0 10px 0px;
+#logo{
+    margin: 15px 5px 15px 20px;
+    vertical-align: middle;
 }
 
-.div-body > span {
-    margin: 25px 0 10px 0px;
-}
 
 .div-main{
     width: 60%;
@@ -80,11 +119,14 @@ span {
     background-color: white;
 }
 
-.paddingx {
-    padding-left: 65px;
+.div-top > span {
+    margin: 15px 0 10px 0px;
 }
 
-#logo{
-    margin: 15px 5px 15px 20px;
-    vertical-align: middle;
+.div-body > span {
+    margin: 25px 0 10px 0px;
+}
+
+.div-top.pleft, .div-body.pleft {
+    padding-left: 65px;
 }
