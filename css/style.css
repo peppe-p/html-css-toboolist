@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: #444851;
+}
+
+body {
+    background-color: #f1f6f9;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 900;
+    vertical-align: middle;
+    font-size: 2.5em;
+    color: black;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+    h2::before {
+        content: "\0025BE";
+    }
+
+header {
+    background-color: white;
+}
+
+span {
+    display: inline-block;
+}
+
+/* ##### ELEMENTI ##### */
+.button {
+    padding: 6px 12px;
+    font-size: 13px;
+    height: auto;
+}
+
+.button.on {
+    color: white;
+    background-color: #47adf1;
+    border: 2px solid #47adf1;
+    border-radius: 5px;
+}
+
+.button.off {
+    color: #d0d5d9;
+    background-color: white;
+    border: 2px solid #d0d5d9;
+    border-radius: 5px;
+}
+/* #################### */
+
+.div-top > span {
+    margin: 15px 0 10px 0px;
+}
+
+.div-body > span {
+    margin: 25px 0 10px 0px;
+}
+
+.div-main{
+    width: 60%;
+    height: auto;
+    margin: 30px auto auto auto;
+}
+
+.div-top {
+    background-color: white;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 3px;
+}
+
+.div-body {
+    background-color: white;
+}
+
+.paddingx {
+    padding-left: 65px;
+}
+
+#logo{
+    margin: 15px 5px 15px 20px;
+    vertical-align: middle;
+}
